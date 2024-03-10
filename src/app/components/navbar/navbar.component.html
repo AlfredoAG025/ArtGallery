@@ -1,0 +1,45 @@
+<!-- Web Page -->
+<nav class="hidden md:block bg-gray-100 p-5 border-b-2 border-b-gray-800">
+  <div class="flex justify-between items-center">
+    <div class="flex gap-10">
+      <button class="bg-rose-700 px-4 rounded font-bold text-white h-10">
+        ARTGalleryApp
+      </button>
+      <button class="hidden lg:block bg-gray-800 px-6 rounded-3xl font-bold text-white h-10">
+        Inicio
+      </button>
+      <button class="font-bold">
+        Tus Dibujos
+      </button>
+    </div>
+
+    <div class="flex gap-10 justify-center items-center">
+      <div class="px-4 bg-gray-300 rounded-xl flex justify-center items-center gap-3 h-full">
+        <i class="fa-solid fa-search font-bold text-2xl"></i>
+        <input class="bg-gray-300 h-12 placeholder-gray-800 font-bold text-xl focus:border-transparent focus:outline-none "
+               type="text"
+               placeholder="Buscar"
+        />
+      </div>
+      <img class="w-12 h-12 rounded-xl" src="assets/img/avatar/freddy.jpg" alt="avatar" height="1280" width="1280"/>
+    </div>
+  </div>
+</nav>
+
+<nav class="sm:block md:hidden bg-gray-100 px-5 py-4 border-b-2 border-b-gray-800">
+  <div class="flex justify-between">
+    <button (click)="showMenu()" class="bg-gray-800 px-6 py-2 rounded-2xl font-bold text-white">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<div class="hidden border-b-2 border-gray-800" id="menu-nav-toggle">
+  <ul class="m-4 grid grid-cols-1 gap-y-5">
+    <li class="ml-20">Inicio</li>
+    <li class="ml-20">Tus Dibujos</li>
+    <li class="flex items-center gap-10">
+      <img class="w-10 h-10 rounded-full" src="assets/img/avatar/freddy.jpg" alt="avatar" height="1280" width="1280"/> Perfil
+    </li>
+  </ul>
+</div>
