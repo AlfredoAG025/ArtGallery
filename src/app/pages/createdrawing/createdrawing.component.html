@@ -1,0 +1,38 @@
+<app-navbar/>
+
+<main class="flex justify-center">
+  <section class="m-10 px-64 py-10 rounded shadow border-2 border-gray-800">
+    <form class="flex flex-col justify-center items-center">
+      <div class="flex flex-col mb-4">
+        <label class="text-2xl font-bold mb-4">Title</label>
+        <input
+          class="border-2 border-gray-800 rounded"
+          type="text"
+        >
+      </div>
+      <div class="flex flex-col mb-4">
+        <label class="text-2xl font-bold mb-4">Image</label>
+        <input
+          class="border-2 border-gray-800 rounded"
+          type="file"
+        >
+      </div>
+      <div class="flex flex-col mb-4">
+        <label class="text-2xl font-bold mb-4">Description</label>
+        <textarea
+          class="border-2 border-gray-800 rounded"
+          type="file"
+        ></textarea>
+      </div>
+
+      <div class="flex gap-10">
+        <button type="button" class="hidden lg:block bg-rose-700 px-6 rounded-3xl font-bold text-white h-10">
+          Go Back
+        </button>
+        <button (click)="$event.preventDefault()" type="submit" class="hidden lg:block bg-gray-800 px-6 rounded-3xl font-bold text-white h-10">
+          Create
+        </button>
+      </div>
+    </form>
+  </section>
+</main>

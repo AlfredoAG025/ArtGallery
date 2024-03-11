@@ -7,13 +7,17 @@ import { MydrawingsComponent } from './pages/mydrawings/mydrawings.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {NgOptimizedImage} from "@angular/common";
 import { DrawingCardComponent } from './components/drawing-card/drawing-card.component';
+import { CreatedrawingComponent } from './pages/createdrawing/createdrawing.component';
+import { DetaildrawingComponent } from './pages/detaildrawing/detaildrawing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MydrawingsComponent,
     NavbarComponent,
-    DrawingCardComponent
+    DrawingCardComponent,
+    CreatedrawingComponent,
+    DetaildrawingComponent
   ],
   imports: [
     BrowserModule,

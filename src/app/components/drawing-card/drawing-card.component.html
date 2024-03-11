@@ -1,11 +1,21 @@
-<article>
-  <div class="w-64 h-64 overflow-hidden rounded-xl shadow">
-    <img class="hover:brightness-75 hover:scale-110 transition-all duration-300 cursor-zoom-in"
-         [src]="drawing.image"
-         alt="avatar"
-         height="1280"
-         width="1280"/>
-  </div>
+<article class="">
+  <a [routerLink]="['/drawing', drawing.id]" >
+    <div class="w-80 h-80 lg:w-64 lg:h-64 overflow-hidden rounded-xl shadow relative group">
+      <img
+        class="w-80 h-80 lg:w-64 lg:h-64 overflow-hidden group-hover:brightness-50 group-hover:scale-110 transition-all duration-300"
+        [src]="drawing.image"
+        alt="avatar"/>
+      <div
+        class="absolute inset-0 opacity-0 flex justify-end items-end m-4 group-hover:opacity-100 transition-opacity duration-300 cursor-zoom-in"
+      >
+        <div class="flex flex-col gap-2 text-white font-bold">
+          <span>100 <i class="fa-regular fa-comment"></i></span>
+          <span>100 <i class="fa-regular fa-heart"></i></span>
+        </div>
+      </div>
+    </div>
+  </a>
+
   <div class="mt-2">
     <p class="font-light">{{ drawing.title }}</p>
   </div>

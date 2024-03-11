@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,15 @@ import {Component} from '@angular/core';
 })
 export class NavbarComponent {
 
+  constructor(private router: Router) {
+  }
+
   isMenuPressed = false;
+
+  navigateTo(route: string) {
+    this.router.navigate([route]);
+  }
+
 
   showMenu() {
     let menu: any = document.getElementById('menu-nav-toggle');

@@ -1,0 +1,15 @@
+<app-navbar/>
+
+<main>
+  <section class="m-10 flex justify-center">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold mb-5">{{ drawing.title }}</h1>
+      <div class="flex border">
+        <img class="w-96 h-96 rounded" [src]="drawing.image" [alt]="'Drawing titled: ' + drawing.title"/>
+        <div class="w-96 m-4">
+          <p>{{ drawing.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

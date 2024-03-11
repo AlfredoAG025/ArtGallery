@@ -1,6 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MydrawingsComponent} from "./pages/mydrawings/mydrawings.component";
+import {CreatedrawingComponent} from "./pages/createdrawing/createdrawing.component";
+import {DetaildrawingComponent} from "./pages/detaildrawing/detaildrawing.component";
 
 const routes: Routes = [
   {
@@ -11,7 +13,15 @@ const routes: Routes = [
   {
     path: 'mydrawings',
     component: MydrawingsComponent,
-  }
+  },
+  {
+    path: 'drawing/:id',
+    component: DetaildrawingComponent,
+  },
+  {
+    path: 'createdrawing',
+    component: CreatedrawingComponent,
+  },
 ];
 
 @NgModule({

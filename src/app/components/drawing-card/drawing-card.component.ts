@@ -8,6 +8,7 @@ import {Drawing} from "../../interfaces/drawing";
 })
 export class DrawingCardComponent {
   @Input() drawing: Drawing = {
+    id: 0,
     title: '',
     image: '',
   }
